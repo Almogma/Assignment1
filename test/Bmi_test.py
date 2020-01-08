@@ -14,15 +14,68 @@ class MyTestCase(unittest.TestCase):
         height_3 = 1
 
         #assume
-        expected1 = 0
-        expected2 = 0
+        expected1 = "Invalid height"
+        expected2 = "Invalid weight"
         expected3 = 3
 
 
         #action
-        result1 = Bmi_test.Bmi_calc(weight_1, height_1)
-        result2 = Bmi_test.Bmi_calc(weight_2, height_2)
-        result3 = Bmi_test.Bmi_calc(weight_3, height_3)
+        result1 = Bmi_test.bmi_calc(weight_1, height_1)
+        result2 = Bmi_test.bmi_calc(weight_2, height_2)
+        result3 = Bmi_test.bmi_calc(weight_3, height_3)
+
+
+        #expect/assert
+        self.assertEqual(result1,expected1)
+        self.assertEqual(result2, expected2)
+        self.assertEqual(result3, expected3)
+
+
+    def test_Check_type(self):
+
+        #sub_values
+        weight_1 = 'a'
+        weight_2 = 'b'
+        weight_3 = 3
+
+        height_1 = 'b'
+        height_2 = 'b'
+        height_3 = 1
+
+        #assume
+        expected1 = "Worng Type"
+        expected2 = "Worng Type"
+        expected3 = 3
+
+
+        #action
+        result1 = Bmi_test.bmi_calc(weight_1, height_1)
+        result2 = Bmi_test.bmi_calc(weight_2, height_2)
+        result3 = Bmi_test.bmi_calc(weight_3, height_3)
+
+
+        #expect/assert
+        self.assertEqual(result1,expected1)
+        self.assertEqual(result2, expected2)
+        self.assertEqual(result3, expected3)
+
+    def test_Bmi_Check(self):
+
+        #sub_values
+        bmi_1 = 17
+        bmi_2 = 22.5
+        bmi_3 = 27
+
+        #assume
+        expected1 = "Underweight"
+        expected2 = "A proper bmi"
+        expected3 = "Overweight"
+
+
+        #action
+        result1 = Bmi_test.bmi_check(bmi_1)
+        result2 = Bmi_test.bmi_check(bmi_2)
+        result3 = Bmi_test.bmi_check(bmi_3)
 
 
         #expect/assert
