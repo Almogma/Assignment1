@@ -2,7 +2,7 @@ import unittest
 from src.BMI import Bmi_test
 
 class MyTestCase(unittest.TestCase):
-    def test_zero_dividing(self):
+    def test_Zero_dividing(self):
 
         #sub_values
         weight_1 = 0
@@ -59,29 +59,38 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(result2, expected2)
         self.assertEqual(result3, expected3)
 
+
     def test_Bmi_Check(self):
 
         #sub_values
         bmi_1 = 17
         bmi_2 = 22.5
         bmi_3 = 27
+        bmi_4 = "a"
+        bmi_5 = -10
 
         #assume
         expected1 = "Underweight"
         expected2 = "A proper bmi"
         expected3 = "Overweight"
+        expected4 = "Worng Type"
+        expected5 = "Invalid_Bmi"
 
 
         #action
         result1 = Bmi_test.bmi_check(bmi_1)
         result2 = Bmi_test.bmi_check(bmi_2)
         result3 = Bmi_test.bmi_check(bmi_3)
+        result4 = Bmi_test.bmi_check(bmi_4)
+        result5 = Bmi_test.bmi_check(bmi_5)
 
 
         #expect/assert
         self.assertEqual(result1,expected1)
         self.assertEqual(result2, expected2)
         self.assertEqual(result3, expected3)
+        self.assertEqual(result4, expected4)
+        self.assertEqual(result5, expected5)
 
 if __name__ == '__main__':
     unittest.main()

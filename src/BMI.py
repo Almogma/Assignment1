@@ -11,10 +11,16 @@ class Bmi_test:
             return "Invalid weight"
         return weight / pow(height,2)
 
+    @staticmethod
     def bmi_check(bmi):
+        if type(bmi) != int and type(bmi) != float:
+            return "Worng Type"
         if(bmi > 18.5 and bmi < 25):
             return "A proper bmi"
         elif (bmi > 25):
             return "Overweight"
-        elif (bmi < 18):
+        elif (bmi > 0 and bmi < 18):
             return "Underweight"
+        elif (bmi < 0):
+            return "Invalid_Bmi"
+
