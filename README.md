@@ -1,6 +1,6 @@
 # TDD project
 
-One Paragraph of project description goes here
+It is a project in TDD software engineering requirements
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You need to download all the files posted to Git
 
 ```
 Give examples

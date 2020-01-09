@@ -3,6 +3,7 @@ class BubbleSort:
     @staticmethod
     def bubbleSort(arr):
      try:
+                arr = list(arr)
                 n = len(arr)
 
             # Traverse through all array elements
@@ -20,3 +21,6 @@ class BubbleSort:
                 return arr
      except TypeError:
         return "Invalid_Values"
+
+
+print(BubbleSort.bubbleSort(3))
