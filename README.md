@@ -72,7 +72,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Almog Mahlof** - *Bmi unit test* - [Bmi Code & Bmi test](https://github.com/Almogma/Assignment1/blob/master/test/Bmi_test.py) 
+* **Alon Gabai**   - *Bubble Sort code* - [Bubble Sort Code](https://github.com/Almogma/Assignment1/blob/master/src/BubbleSort.py)
+* **Michal Elisha**  - *Bubble Sort unit test* - [Bubble Sort Code](https://github.com/Almogma/Assignment1/blob/master/test/BubbleSort_test.py)
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
